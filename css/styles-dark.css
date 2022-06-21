@@ -1,0 +1,122 @@
+:root {
+    --verde4: #D4ECDD;
+    --verde3: #345B63;
+    --verde2: #152D35;
+    --verde1: #112031;
+}
+
+header {
+    background-color: #345B63;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--verde4);
+    background-color: var(--verde1);
+}
+
+.container-text{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer {
+    padding: 2px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--verde2);
+    color: var(--verde4);
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+footer::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container-footer {
+
+}
+
+.container-nav {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    padding: 20px;
+    float: left;
+    height: auto;
+    width: 35px;
+}
+
+.logo-footer {
+    height: auto;
+    width: 20px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 30px;
+    position: relative;
+}
+
+nav a {
+    color: var(--verde4);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background-color: var(--verde4);
+
+    position: absolute;
+    top: 0;
+    width: 0;
+
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.container-text {
+    text-align: justify;
+}
+
+.btn-mode {
+    margin-top: 33px;
+    margin-left: 13px;
+    width: 15px;
+    height: 15px;
+}
